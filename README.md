@@ -1,4 +1,4 @@
-# Round Table Framework for TQA Interfaces
+# Round Table - Framework for Advanced TQA
 
 ## Overview
 
@@ -75,5 +75,5 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 ## Acknowledgments
 
-- This work is based on the paper "Advancing Query Precision in TQA Interfaces: Leveraging FTS-Enhanced Dynamic Schema and Context-Aware Autocomplete".
+- This work is based on our paper "Advancing Query Precision in TQA Interfaces: Leveraging FTS-Enhanced Dynamic Schema and Context-Aware Autocomplete".
 ---
