@@ -8,6 +8,10 @@ Traditional methods struggle to relay the dataset's size and complexity to the L
 
 Additionally, our framework includes a custom autocomplete feature powered by the FTS. This feature not only narrows the search space for LLMs but also suggests queries grounded in the table's data, significantly refining the interaction between the user and complex datasets.
 
+## Architecture
+![Round Table Architecture](https://github.com/pkscanvas/RoundTable/assets/16529904/a79d86b4-a3d8-4162-9adc-0be5f45e47c3)
+
+
 ## Repository Structure
 
 ```
