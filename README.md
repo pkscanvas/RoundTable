@@ -57,13 +57,16 @@ round-table-framework/
 
 ### Usage
 
-1. Start the Tkinter application:
+1. Keep the dataset in the code folder
+2. Run the LM Studio server
+3. Start the Tkinter application:
    ```
    python code/ctk_ui.py
    ```
-2. Enter your query in plain English through the UI.
-3. Utilize the autocomplete feature for query suggestions.
-4. Execute the query and interact with your database seamlessly.
+4. Enter filename(with extension) and click 'Create Index' (required once for a dataset)
+5. Load Data and start asking questions about the data.
+6. Utilize the autocomplete feature for query suggestions.
+4. Submit the query and interact with your database seamlessly.
 
 ## Contributing
 
