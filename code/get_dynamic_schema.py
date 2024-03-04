@@ -14,36 +14,6 @@ def load_index(file_name:str) -> None:
     ix = open_dir(f"{file_name}_kb_index")
     return ix
 
-# ===================================
-# def identify_column(ix,keyword):
-#     """
-#     Detect column names present in query using.
-    
-#     Parameters:
-#         ix (Index): The index to search in.
-#         keyword (str): The keyword to look for in the synonyms of the columns.
-            
-#     Returns:
-#         list: A list of column names that match the keyword.
-#     """
-#     columns_detected = []
-#     with ix.searcher() as searcher:
-#         ###Fuzzy lookup
-#         parser = QueryParser("synonyms", ix.schema)
-#         parser.add_plugin(FuzzyTermPlugin())
-#         query = parser.parse(keyword)
-#         ####
-#         # query = QueryParser("synonyms", ix.schema).parse(keyword)
-#         results = searcher.search(query, limit=30)
-#         results.fragmenter.charlimit = None
-#         # Show more context before and after
-#         results.fragmenter.surround = 100
-
-#         for result in results:
-#             columns_detected.append(result["column_name"])
-
-#     return columns_detected
-
 def identify_column(ix, keyword):
     """
     Detect column names and the synonyms that matched the keyword.
@@ -128,7 +98,7 @@ def identify_column_from_value(ix, keyword, use_wildcard=True):
 def extract_keywords(text, money_words=[]):  
     '''Extract Keywords from the user query'''  
 
-    # Remove 2 consecutive single quotes
+    # Remove 2 consecutive single quotes (to not pass quoted words coming from suggestions to the index)
     # text = text.replace("''","'")
     
     # Load Keywords
@@ -166,34 +136,6 @@ def extract_keywords(text, money_words=[]):
     print(f"Extracted Keywords: {result}")
   
     return result, is_date_present  
-
-# ===================================
-# def extract_columns(ix, keywords):
-#     """
-#     Step 1: Looking in attribute synonym kb
-#     Extract columns based on given keywords by searching in attribute synonym knowledge base (kb).
-    
-#     Parameters:
-#         ix (Index): The index to search in.
-#         keywords (list): A list of keywords to look for in the column names and unique values.
-            
-#     Returns:
-#         set, list: A set of column names detected from the synonym kb and a list of keywords matched in any column name.
-#     """
-#     columns_detected = []
-#     keywords_matched_columns = (
-#         []
-#     )  # List to store keywords for which the columns were matched in the first place so that it can be skipped for next matching when searching within unique values of a column
-#     for keyword in keywords:
-#         temp_columns = identify_column(ix, keyword)
-#         if temp_columns:
-#             # columns_detected[keyword] = temp_columns # Which word exactly
-#             columns_detected.extend(identify_column(ix, keyword))
-#             keywords_matched_columns.append(
-#                 keyword
-#             )  # To store keywords which have been detected in any column name
-
-#     return set(columns_detected), keywords_matched_columns
 
 def extract_columns(ix, keywords):
     """

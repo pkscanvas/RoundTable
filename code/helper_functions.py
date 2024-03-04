@@ -113,6 +113,8 @@ def extract_code(input_string):
         if matches:
             for match in matches:
                 full_code += match + '\n'
+        
+        full_code = f"""import matplotlib.pyplot as plt\nimport numpy as np\nimport seaborn as sns\nimport pandas as pd\n{full_code}"""
 
         return full_code
     except Exception as e:
