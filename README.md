@@ -1,8 +1,10 @@
 # Round Table - Framework for Advanced TQA
+![rt](https://github.com/pkscanvas/RoundTable/assets/16529904/4f6db41f-a26d-4a50-ae3d-16054c415827)
+
 
 ## Overview
 
-The Round Table Framework is designed to advance query precision in Text-to-SQL interfaces, which has become increasingly relevant with the advancements in Language Models (LLMs). Our framework addresses the challenge of translating natural language queries into executable database queries, especially when dealing with real-world datasets that feature a vast array of attributes and complex values.
+The Round Table Framework is designed to advance query precision in TQA interfaces, which has become increasingly relevant with the advancements in Language Models (LLMs). Our framework addresses the challenge of translating natural language queries into executable database queries, especially when dealing with real-world datasets that feature a vast array of attributes and complex values.
 
 Traditional methods struggle to relay the dataset's size and complexity to the LLM, often resulting in less accurate query identification. The Round Table Framework overcomes these limitations by incorporating Full-Text Search (FTS) on the input table to facilitate specific detection of values and columns, thus enhancing query precision.
 
@@ -28,7 +30,7 @@ round-table-framework/
 
 ## Features
 
-- **Natural Language Querying**: Allows users to query databases in plain English.
+- **100% On-Device**: Allows users to query databases in plain English using on device LLMs.
 - **FTS-Enhanced Dynamic Schema**: Utilizes Full-Text Search to improve detection accuracy.
 - **Context-Aware Autocomplete**: Suggests relevant queries based on the underlying table data.
 - **Tkinter-based UI**: A user-friendly interface to interact with the framework.
@@ -58,7 +60,7 @@ round-table-framework/
 ### Usage
 
 1. Keep the dataset in the code folder
-2. Run the LM Studio server
+2. Run the LM Studio server after choosing a model compatible with your system
 3. Start the Tkinter application:
    ```
    python code/ctk_ui.py
