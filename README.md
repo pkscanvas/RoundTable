@@ -8,14 +8,13 @@ https://github.com/pkscanvas/RoundTable/assets/16529904/a9449989-c4ba-42ae-a2be-
 
 
 ## Overview
-It is an application that lets you query datasets(spreadsheets) in plain english on your laptop using open source LLMs (something like chatGPTs advanced data analysis but open source and on device).
-Performance of small and quantizied LLMs are enhanced by the proposed 'RoundTable Framework' which **boosts the performance of these small models on data analysis tasks by upto 25%**
+It is an application that lets you query datasets (spreadsheets) in plain English on your laptop using open source LLMs (something like ChatGPT's advanced data analysis but open source and on device). Performance of small and quantized LLMs are enhanced by the proposed 'RoundTable Framework,' which **boosts the performance of these small models on data analysis tasks by up to 25%**.
 
-The Round Table Framework is designed to advance query precision in TQA interfaces, which has become increasingly relevant with the advancements in text to query methods. This framework addresses the challenge of translating natural language queries into executable database queries, especially when dealing with real-world datasets that feature a vast array of attributes and complex values.
+The Round Table Framework enhances the accuracy of querying databases through Text-to-Query method. It tackles the issue of converting vague, incomplete, or misspelled user queries into precise database queries (currently pandas). This is crucial for handling real-world datasets, which often contain a wide variety of attributes and complex data.
 
-Traditional methods struggle to relay the dataset's size and complexity to the LLM, often resulting in less accurate query identification. The Round Table Framework overcomes these limitations by incorporating Full-Text Search (FTS) on the input table to facilitate specific detection of values and columns, thus enhancing query precision.
+Traditional approaches (especially if performed using small quantized models) fail to adequately communicate the breadth and complexity of datasets to Large Language Models (LLMs), leading to inaccuracies in query identification. The Round Table Framework addresses this by integrating Full-Text Search (FTS) directly into the flow, improving the identification of specific values and columns, and thereby enhancing overall query precision.
 
-Additionally, our framework includes a custom autocomplete feature powered by the FTS. This feature not only narrows the search space for LLMs but also suggests queries grounded in the table's data, significantly refining the interaction between the user and complex datasets.
+Furthermore, the framework enhances user interaction with complex datasets through a custom autocomplete feature powered by FTS. This not only streamlines the LLM's search process but also offers query suggestions based on the dataset's actual content, greatly improving the user experience by reducing user navigation to the dataset to figure out exact columns/values.
 
 ## Architecture
 ![Round Table Architecture](https://github.com/pkscanvas/RoundTable/assets/16529904/a79d86b4-a3d8-4162-9adc-0be5f45e47c3)
