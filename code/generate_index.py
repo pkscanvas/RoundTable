@@ -8,6 +8,8 @@ from typing import Optional
 from whoosh.index import create_in
 from whoosh.fields import Schema, TEXT, ID
 import generate_prompt
+import json
+import pickle
 
 # Read the file in supported formats
 def read_file(file_name: str) -> Optional[pd.DataFrame]:
@@ -192,7 +194,17 @@ def create_schema(data_types, categorical_columns, synonyms):
 
 # Indexing Knowledgebase
 def create_index(file_name, schema_dict):
-    # Decalaring Index Schema
+
+    # Save dict
+    try:
+        # with open(f"{file_name}.json", 'w') as fj:
+        #     json.dump(schema_dict, fj, indent=4)
+        with open(f"{file_name}.pkl", 'wb') as fp:
+            pickle.dump(schema_dict, fp)
+    except Exception as e:
+        print(f"JSON Error: {e}")
+
+
     # Define the schema for the index 
     schema = Schema(column_name=ID(stored=True), synonyms=TEXT(stored=True), unique_values=TEXT(stored=True))  
 
@@ -262,7 +274,7 @@ def generate_index(file_name: str) -> None:
         categorical_columns = get_unique_values(df=df, cat_cols=get_cat_cols(data_types=data_types))
 
         # Step 4: Create synonyms
-        synonyms = create_synonym_dict(data_types=data_types, generate_synonyms=True)
+        synonyms = create_synonym_dict(data_types=data_types, generate_synonyms=False)
 
         # Step 5: Create schema
         schema_dict = create_schema(data_types, categorical_columns, synonyms)
