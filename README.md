@@ -1,10 +1,17 @@
 # Round Table - Framework for Advanced TQA
-![rt](https://github.com/pkscanvas/RoundTable/assets/16529904/4f6db41f-a26d-4a50-ae3d-16054c415827)
+![RoundTableLogo](https://github.com/pkscanvas/RoundTable/assets/16529904/d53bc719-6ee5-478f-90c1-f42ecf166a48)
+
+
+
+
+https://github.com/pkscanvas/RoundTable/assets/16529904/a9449989-c4ba-42ae-a2be-4d320fd77015
 
 
 ## Overview
+It is an application that lets you query datasets(spreadsheets) in plain english on your laptop using open source LLMs (something like chatGPTs advanced data analysis but open source and on device).
+Performance of small and quantizied LLMs are enhanced by the proposed 'RoundTable Framework' which **boosts the performance of these small models on data analysis tasks by upto 25%**
 
-The Round Table Framework is designed to advance query precision in TQA interfaces, which has become increasingly relevant with the advancements in Language Models (LLMs). Our framework addresses the challenge of translating natural language queries into executable database queries, especially when dealing with real-world datasets that feature a vast array of attributes and complex values.
+The Round Table Framework is designed to advance query precision in TQA interfaces, which has become increasingly relevant with the advancements in text to query methods. This framework addresses the challenge of translating natural language queries into executable database queries, especially when dealing with real-world datasets that feature a vast array of attributes and complex values.
 
 Traditional methods struggle to relay the dataset's size and complexity to the LLM, often resulting in less accurate query identification. The Round Table Framework overcomes these limitations by incorporating Full-Text Search (FTS) on the input table to facilitate specific detection of values and columns, thus enhancing query precision.
 
@@ -31,9 +38,10 @@ round-table-framework/
 ## Features
 
 - **100% On-Device**: Allows users to query databases in plain English using on device LLMs.
-- **FTS-Enhanced Dynamic Schema**: Utilizes Full-Text Search to improve detection accuracy.
+- **FTS-Enhanced Dynamic Schema**: Utilizes Full-Text Search to improve value detection accuracy.
 - **Context-Aware Autocomplete**: Suggests relevant queries based on the underlying table data.
 - **Tkinter-based UI**: A user-friendly interface to interact with the framework.
+- **Multi-Turn Conversations**: Ability to chat for performing iterative operations
 
 ## Getting Started
 
@@ -60,7 +68,7 @@ round-table-framework/
 ### Usage
 
 1. Keep the dataset in the code folder
-2. Run the LM Studio server after choosing a model compatible with your system
+2. Run the LM Studio server after choosing a model compatible with your system (I recommend -> **mistral-7b-instruct-v0.2.Q4_K_M.gguf** for it's small size and stability)
 3. Start the Tkinter application:
    ```
    python code/ctk_ui.py
@@ -68,17 +76,9 @@ round-table-framework/
 4. Enter filename(with extension) and click 'Create Index' (required once for a dataset)
 5. Load Data and start asking questions about the data.
 6. Utilize the autocomplete feature for query suggestions.
-4. Submit the query and interact with your database seamlessly.
-
-## Contributing
-
-We welcome contributions to the Round Table Framework. Please read `CONTRIBUTING.md` for details on our code of conduct, and the process for submitting pull requests to us.
-
-## License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+4. Submit the query and interact with your databset seamlessly.
 
 ## Acknowledgments
 
-- This work is based on our paper "Advancing Query Precision in TQA Interfaces: Leveraging FTS-Enhanced Dynamic Schema and Context-Aware Autocomplete".
+- This work is based on our paper "Advancing Query Precision in TQA Interfaces: Leveraging FTS-Enhanced Dynamic Schema and Context-Aware Autocomplete" (to be published).
 ---
