@@ -176,7 +176,7 @@ def suggest_sentences(
     words = input_sentence.split()
     last_word = words[-1]
 
-    if len(last_word) >= 3:
+    if len(last_word) > 3:
         if enable_fuzzy:
             # Check if word is greater than 3 characters then only allow Fuzzy
             last_word += "~1/3"  # max edit distance of 1 and min prefix match of 3
