@@ -59,12 +59,27 @@ round-table-framework/
    ```
    cd round-table-framework
    ```
-3. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+
 
 ### Usage
+
+#### Environment Setup (Optional)
+
+1. Install miniconda: https://docs.anaconda.com/free/miniconda/miniconda-install/
+   
+3. Create a new environment
+```
+   conda create -n roundtable python=3.10.13
+```
+3. Use the environment
+```
+   conda activate roundtable
+```
+4. Install the required dependencies:
+```
+   pip install -r requirements.txt
+```
+#### Running the Application
 
 1. Keep the dataset in the code folder
 2. Run the LM Studio server after choosing a model compatible with your system (I recommend -> **mistral-7b-instruct-v0.2.Q4_K_M.gguf** for it's small size and stability)
