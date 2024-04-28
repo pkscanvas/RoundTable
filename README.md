@@ -34,7 +34,7 @@ https://github.com/pkscanvas/RoundTable/assets/16529904/cb7e3281-47f9-4023-be55-
 - **100% On-Device**: Allows users to query databases in plain English using on device LLMs.
 - **FTS-Enhanced Dynamic Schema**: Utilizes Full-Text Search to improve value detection accuracy.
 - **Context-Aware Autocomplete**: Suggests relevant queries based on the underlying table data.
-- **Simple UI**: A user-friendly interface to interact with the framework.
+- **Functional UI**: Intuitive UI complete with visible tables, real-time suggestions as you type, downloadable visualizations, and much more
 - **Multi-Turn Conversations**: Ability to chat for performing iterative operations
 ---
 
