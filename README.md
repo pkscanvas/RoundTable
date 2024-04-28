@@ -4,6 +4,10 @@
   <img src="https://github.com/pkscanvas/RoundTable/assets/16529904/d53bc719-6ee5-478f-90c1-f42ecf166a48" alt="Description of Image">
 </p>
 
+## For Feedbacks and Feature Requests
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/pratyushkumarsrivastava)   [![Email](https://img.shields.io/badge/Email-Me-green?style=flat&logo=gmail)](mailto:pratyushk2011@gmail.com)
+
 
 ## Overview
 RoundTable is a native Mac and Windows application that lets you query datasets (spreadsheets) in plain English on your laptop using open source LLMs (something like ChatGPT's advanced data analysis but open source and on device or you can can call it LM Studio for Data Analysis). Performance of small and quantized LLMs are enhanced by the proposed 'RoundTable Framework,' which **boosts the performance of these small models on data analysis tasks by up to 25%**.
