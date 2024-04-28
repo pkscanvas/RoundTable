@@ -56,9 +56,16 @@ https://github.com/pkscanvas/RoundTable/assets/16529904/cb7e3281-47f9-4023-be55-
 1. **Create an Index:** Enter the name of your dataset file (including the file extension like .csv) and click 'Create Index'. This is required only once per dataset.
 2. **Load Data:** Click 'Load Data' to display your dataset in table format.
 
-### Step 5: Engage with Your Data
+### Step 5: Ask your question!
 1. **Ask Questions:** Type your question and press 'Send'. You can continue to ask follow-up questions related to the initial query.
 2. **New Queries:** For new topics, use 'New Question' to reset the context.
 3. **Use Autocomplete:** Enhance query efficiency by selecting suggestions from the dropdown menu.
 
 --- 
+
+### TODO:
+- Support for Ollama
+- Better Indication for a running background task
+- Option to rectify the generated code directly and rerun
+- Better Prompt Engineering
+
