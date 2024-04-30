@@ -50,7 +50,7 @@ https://github.com/pkscanvas/RoundTable/assets/16529904/cb7e3281-47f9-4023-be55-
 
 ### Step 2: Install RoundTable
 1. **Download RoundTable:** Choose the correct version of the application for your operating system (Windows or macOS).
-2. **Initial Setup:** Launch the application. The first startup might take a minute.
+2. **Initial Setup:** Launch the application. On mac the first startup might take a minute. And you might have to whitelist the application from 'Privacy & Security' settings
 
 ### Step 3: Organize Your Data
 1. **Locate the Data Folder:** Upon startup, a dialog box will display the path to place your datasets. Typically, this is `round-table-datasets` in the user directory.
