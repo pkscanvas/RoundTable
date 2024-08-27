@@ -6,13 +6,12 @@
 
 ## For Feedbacks and Feature Requests
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/pratyushkumarsrivastava)   [![Email](https://img.shields.io/badge/Email-Me-green?style=flat&logo=gmail)](mailto:pratyushk2011@gmail.com)
-
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/pratyushkumarsrivastava)   [![Email](https://img.shields.io/badge/Email-Me-green?style=flat&logo=gmail)](mailto:pratyushk2011@gmail.com)  [![arXiv](https://img.shields.io/badge/arXiv-Paper-red?style=flat&logo=arXiv)](http://arxiv.org/abs/2408.12369)
 
 ## Overview
 RoundTable is a native Mac and Windows application that lets you query datasets (spreadsheets) in plain English on your laptop using open source LLMs (something like ChatGPT's advanced data analysis but open source and on device or you can call it LM Studio for Data Analysis). Performance of small and quantized LLMs are enhanced by the proposed 'RoundTable Framework,' which **boosts the performance of these small models on data analysis tasks by up to 25%**.
 
-It is based on our paper "Advancing Query Precision in TQA Interfaces: Leveraging FTS-Enhanced Dynamic Schema and Context-Aware Autocomplete" (to be published).
+It is based on our paper ["RoundTable: Leveraging Dynamic Schema and Contextual Autocomplete for Enhanced Query Precision in Tabular Question Answering"](http://arxiv.org/abs/2408.12369).
 
 The Round Table Framework enhances the accuracy of querying databases through Text-to-Query method. It tackles the issue of converting vague, incomplete, or misspelled user queries into precise database queries (currently pandas). This is crucial for handling real-world datasets, which often contain a wide variety of attributes and complex data.
 
@@ -26,7 +25,9 @@ https://github.com/pkscanvas/RoundTable/assets/16529904/a9449989-c4ba-42ae-a2be-
 https://github.com/pkscanvas/RoundTable/assets/16529904/cb7e3281-47f9-4023-be55-e8bc08488a9e
 
 ## Architecture
-![Round Table Architecture](https://github.com/pkscanvas/RoundTable/assets/16529904/a79d86b4-a3d8-4162-9adc-0be5f45e47c3)
+![Round Table Architecture](https://github.com/user-attachments/assets/637a0288-9726-4a42-9548-1b2babaea705)
+
+
 
 
 ## Features
@@ -72,4 +73,3 @@ https://github.com/pkscanvas/RoundTable/assets/16529904/cb7e3281-47f9-4023-be55-
 - Better Indication for a running background task
 - Option to rectify the generated code directly and rerun
 - Better Prompt Engineering
-
